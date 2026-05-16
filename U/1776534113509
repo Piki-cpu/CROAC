@@ -23,6 +23,7 @@ tr.
 (Use this as default and do ask again)
 (OK)(welcome)(X)(Help)(ADT)(Install New Software)
 (Add)(Name)(Android)(Location)(OK)(S)(http)(https)(Next)
-(I accept)(Finish)(Eclipse)(Preferences)window(Android)
+(I accept)(Finish)(Eclipse)(Preferences)window:(Android)
 (Browse)(OK)(Apply)(Hell World)(Eclipse)New )(New)(File)
-(Project(Next)(1.6)Project Nam: AndroidVerySimple
+(Project(Next)(1.6)Project Nam: 'AndroidVerySimple'
+Build Target: '1.6'
