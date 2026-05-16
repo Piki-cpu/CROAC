@@ -26,4 +26,6 @@ tr.
 (I accept)(Finish)(Eclipse)(Preferences)window:(Android)
 (Browse)(OK)(Apply)(Hell World)(Eclipse)New )(New)(File)
 (Project(Next)(1.6)Project Nam: 'AndroidVerySimple'
-Build Target: '1.6'
+Build Target: '1.6' Application Name: 'VerySimple'
+Package name:com.book.VerySimple 
+Create Activity:Activity_VerySimple
