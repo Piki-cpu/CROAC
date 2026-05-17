@@ -32,4 +32,4 @@ Create Activity:Activity_VerySimple
 (Finish)(Layout)(Res)(main.xml)Hello )(World(Eclipse)(Propiertes)(Advanced)(Environment Variables)
 (User Environment)(New)(Name)(Path)(Name)(Variable Value)
 C:\Documents and Settings\UserName\Desktop\android-sdk-windows\tools
-(UserName)(tools)(OK)(OK)(OK)(CMD)(Start>>Run)
+(UserName)(tools)(OK)(OK)(OK)(CMD)(Start>>Run)(OK)android list target(Enter)
