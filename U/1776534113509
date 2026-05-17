@@ -34,4 +34,28 @@ Create Activity:Activity_VerySimple
 C:\Documents and Settings\UserName\Desktop\android-sdk-windows\tools
 (UserName)(tools)(OK)(OK)(OK)(CMD)(Start>>Run)(OK)android list target(Enter)(1)
 android create project -n AndroidVerySimple -p c:\1\ -k
-com.book.VerySimple -a
+com.book.VerySimple -a Activity_VerySimple -t 1
+(Project Name)(AndroidVerySimple)(-n)Package )(com.book.VerySimple)(-k)(Activity_VerySimple)(Name(Activity Name)(Activity_VerySimple)(-a)(c:\1\)(-p)(Path)(1)(-t)(Target)(Enter)(c:\1)
+C:\Documents and Settings\UserName\workspace
+(Android)(Window)Android SDK and AVD )(Manager(SDK Setup)(sdk-windows(Virtual Devices)(New)(SD)(VM_Android1.6)(1.6)(500)(Hardware)(New)(SD Card Support)(OK)
+-GPS Support
+-Accelerometer
+(Create AVD)(OK)(Start)(Launch)(Run As)(Android Application)(HelloWorld)(Clean)(Project)(OK)Environment )(Start>>Run)(CMD)(OK)
+Android-h
+(enter)(h)(android -h)(android)
+android list target
+(Enter)(1)(Enter)
+android create avd -n VM_Android1.6 -t 1
+create )(VM_Android1.6)(-t)(avd -n(1)(Enter)(No)(yes)[yes](VM_Android1.6)(VM_Android1.1_1)
+emulator -avd VM_Android1.6_1
+(SDK Setup)
+DroidSans-Bold.ttf(DroidSansFallback.ttf, DroidSans.ttf
+adb remount
+adb shell rm/system/fonts/*
+
+adb push c:\fontss\DroidSans-Bold.ttf/system/fonts/
+adb push c:\fontss\DroidSans.ttf /system/fonts/
+adb shell rm /system/app/AlarmClock.apk
+adb install c:\Vending.apk
+(DDMS)(Eclipse)(DDMS)(+)(DDMS)(DDMS)(DDMS)(File Explorer)(Heap)(Threads)(Allocation Tracker)(File Explorer)(sd card)(Devices)USB )(SDK)(DriverEmulator)(Control(SMS)(GPS)(latitude)(Longitude).(GPS)(Google.com in English)(slideme.org)
+(SAM v2.42)(Done)Slide )(Me(Menu)(Settings)(Applications)(Unknown sources)(Development)(DDMS)(Slide Me) 
