@@ -58,4 +58,18 @@ adb push c:\fontss\DroidSans.ttf /system/fonts/
 adb shell rm /system/app/AlarmClock.apk
 adb install c:\Vending.apk
 (DDMS)(Eclipse)(DDMS)(+)(DDMS)(DDMS)(DDMS)(File Explorer)(Heap)(Threads)(Allocation Tracker)(File Explorer)(sd card)(Devices)USB )(SDK)(DriverEmulator)(Control(SMS)(GPS)(latitude)(Longitude).(GPS)(Google.com in English)(slideme.org)
-(SAM v2.42)(Done)Slide )(Me(Menu)(Settings)(Applications)(Unknown sources)(Development)(DDMS)(Slide Me) 
+(SAM v2.42)(Done)Slide )(Me(Menu)(Settings)(Applications)(Unknown sources)(Development)(DDMS)(Slide Me)(slideme.or)(Utilities)(OI Shopping List)OI Shopping )(Utilities)(List(Terms & Download)(Install)(Notifications)(Install)(Open)(apk)
+(Download)(SD Card)Slide Me(Apps Installer)(apk)(Slide Me)(DDMS)(Devices)(Screen Capture)
+android-sdk-windows\plataforms\android-1.6\skins\HVGA
+(Eclipse)(Task List)(X)(Project >> Clean)(src)(com.android.TaskList)(Activity_TaskList)(res)(layout)(main.xml)(main.xml)(Portrait)(Landscape)(Config)(Layout)(Views)(main.xml)(main.xml)(layout)
+1<?xml version="1.0" encoding="utf-8"?>
+2<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ >
+7<TextView
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+<
