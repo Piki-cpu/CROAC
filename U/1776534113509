@@ -156,3 +156,31 @@ public boolean onCreateOptionsMenu(Menu menu) {
 }
 import android.util.Log;
 @Override
+public boolean onOptionsItemSelected(MenuItem item) {
+       TextView MainTextView =
+(TextView)findViewById(R.id.MainTextView);
+        switch(item.getItemId())
+        {
+        case 1 :
+
+      Log.v("Task:",MainTextView.getText().toString());
+              return true;
+        }
+        return false;
+}
+(50)(keytool)(JDK)
+C:\Program Files\Java\jdk1.6.0_18\bin\keytool.exe
+keytool -list -alias alias_name -keystore my-release-key-keystore
+keytool -genkey -v -keystore badwi.keystore -alias badwi -keyalg RSA -keysize 2048 -validity 10000
+(badwi)(badwi.keystore)
+Windows Vista or 7:
+C:\Users\<user>\android\badwi.keystore
+http://market.android.com/publish/Home
+(Upload Application) RestDroid.mini
+RestDroid.mini
+http://www.youtube.com/watch?v=BEDuS6gq4JA
+main.xml-intro.java 
+rated_rest_list.xml-Best50.java
+view_map.xml-ViewOnMapActivity.java
+Bet50
+ViewOnMapActivity.
