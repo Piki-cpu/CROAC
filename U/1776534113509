@@ -1,4 +1,4 @@
-tr.
+TR.
 621)12)10)7705)3
 0)0)0)2399)1)
 1186)2)2)2443)1)
@@ -288,4 +288,9 @@ private int voteCount;
 private double wScore;
 
 public RatedItem(String name, int id, int voteCount, double wScore)
+{
+this.name = name;
+this.id = id;
+this.voteCount = voteCount:
+this.wScore = wScore
 {
