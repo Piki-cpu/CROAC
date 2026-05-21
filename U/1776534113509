@@ -35,7 +35,7 @@ C:\Documents and Settings\UserName\Desktop\android-sdk-windows\tools
 (UserName)(tools)(OK)(OK)(OK)(CMD)(Start>>Run)(OK)android list target(Enter)(1)
 android create project -n AndroidVerySimple -p c:\1\ -k
 com.book.VerySimple -a Activity_VerySimple -t 1
-(Project Name)(AndroidVerySimple)(-n)Package )(com.book.VerySimple)(-k)(Activity_VerySimple)(Name(Activity Name)(Activity_VerySimple)(-a)(c:\1\)(-p)(Path)(1)(-t)(Target)(Enter)(c:\1)
+(Project Name)(AndroidVerySimple)(-n)Package )(com.book.VerySimple)(-k)(Activity_VerySimple)(Name(Activity Name)(Activity_VerySimple)(-a)(c:\1\)(-p)(Path)(1)(-t)(Target)(Enter)(c:\1)(Eclipse)
 C:\Documents and Settings\UserName\workspace
 (Android)(Window)Android SDK and AVD )(Manager(SDK Setup)(sdk-windows(Virtual Devices)(New)(SD)(VM_Android1.6)(1.6)(500)(Hardware)(New)(SD Card Support)(OK)
 -GPS Support
@@ -177,10 +177,115 @@ Windows Vista or 7:
 C:\Users\<user>\android\badwi.keystore
 http://market.android.com/publish/Home
 (Upload Application) RestDroid.mini
-RestDroid.mini
-http://www.youtube.com/watch?v=BEDuS6gq4JA
+RestDroid.mini RestDroid-mini RestDroid RestDroid RestDroid-mini. RestDroid ...). API.
+http://www.youtube.com/watch?v=BEDuS6gq4JA Classes Methods XML XML
 main.xml-intro.java 
 rated_rest_list.xml-Best50.java
 view_map.xml-ViewOnMapActivity.java
-Bet50
-ViewOnMapActivity.
+Bet50 intro
+ViewOnMapActivity. RestDroidApplication.java Activities Application Classes RatedItem.java Object RatedRestaurant.ListItem.java rest_list_item.xml RatedItem.java Second Cup 3.7/5 81 AdressOverlay.java
+RestDroidApplication.java (Application)
+AddressOverlay.java (Overlay)
+main.xml-intro.java rated_rest_list.xml-Best50.java (Activity)
+Rateditem.java (Aux)
+view_map.xml-ViewOnMapActivity.java (Activity)
+rest_list_item.xml-RatedRestaurant.istitem.java (RelativeLayout)
+RestDroidApplication.java Application.(Activity Application Activity (Auxiliary))AddressOverlay.java) RatedRestaurantListItem.java RatedRestaurantListItem.java rest_list_item.xml.( File>new>project
+Android Project Android UTF-8 Properties:intro:Class android.app.Activity () main.xml main.xml values (colors.xml new>file>colors.xml values lower case).
+<?xml version="1.0" encoding="utf-8"?>
+<resource>
+<color name="background">#FFFFFFFF</color>
+</resources>
+strings.xml main.xml
+<!-- x -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:background="@color/background">
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<!-- y -->
+<ImageView
+android:id="@+id/ImageView01"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/andbooklogo"
+android:adjustViewBounds="true"
+android:layout_centerHorizontal="true"
+>
+</ImageView>
+<!-- 2 -->
+<Button android:id="@+id/search"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/ImageView01"
+android:paddingLeft="20px"
+android:paddingRight="20px"
+android:layout_centerInParent="true"
+android:layout_marginTop="20px"
+/>
+
+</RelativeLayout>
+</LinearLayout>
+ImageView) res/drawable res/drawable-hdpi).
+RelativeLayout LinearLayout
+RelativeLayout android:layout_below Layoutintro.
+package android.prog.easily;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class intro extends Activity
+{
+private Button getbest50;
+
+
+@Override
+ public void onCreate(Blunde savedInstanceState)
+{
+   super.onCreate(savedInstanceState);
+
+                                    //
+   setContentView(R.layout.main);
+   setUpViews();
+  }
+private void setUpViews()
+{
+getbest50= (Button)findViewById(R.id.search);
+"); getbest50.setText("
+                             //     
+getbest50.setOnClickListener(new
+View.OnClickListener()
+{
+public void onClick(View v)
+{
+top50Handler();
+}
+});
+
+}
+
+protected void top50Handler()
+{
+
+}
+}
+intro.java((RatedItem.java
+package android.prog.easily;
+import java.io.Serializable
+public class RatedItem implements Serializable
+{
+private static final llong serialVersionUID =
+5500258407135652423L;
+private String name;
+private int id;
+private int voteCount;
+private double wScore;
+
+public RatedItem(String name, int id, int voteCount, double wScore)
+{
