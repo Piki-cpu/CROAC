@@ -292,5 +292,220 @@ public RatedItem(String name, int id, int voteCount, double wScore)
 this.name = name;
 this.id = id;
 this.voteCount = voteCount:
-this.wScore = wScore
+this.wScore = wScore;
 {
+
+public String getName()
+{
+return name;
+}
+
+public void setName(String name)
+{
+this.name = name;
+}
+
+public void setName(String name)
+{
+this.name = name;
+}
+
+public int getId()
+{
+return id;
+}
+
+public void setId(int id)
+{
+this.id = id;
+}
+
+public int getVoteCount()
+{
+return voteCount;
+}
+public void setVoteCount(int voteCount)
+{
+this.voteCount = voteCount;
+}
+
+public.double getwScore()
+{
+return wScore;
+}
+
+public void setwScore(int wScore)
+{
+this.Score = wScore;
+}
+
+}
+RestDroidApplication.java Activities).
+package android.prog.easily;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.ethods.HttpGet;
+import org.json.JSONException;
+import org.json.JSONObject;
+import android.app.Application;
+
+public class RestDroidApplication extends Application 
+{
+
+// Qaym API Key
+private String key = "xxxxxxxxxxxxxxxxxxxx";
+private int[] countryAndCityIds;
+private JSONObject[] ratedRestaurants;
+private ArrayList<RatedItem>globalAdapterData;
+private RatedItem itemOnMap;
+private String getBranchesDetailsText()
+{
+return branchesDetailsText;
+}
+
+public void setBranchesDetailsText(StringbranchesDetailsText)
+{
+this.branchesDetailsText= branchesDetailsText;
+}
+
+public RatedItem getItemOnMap()
+{
+
+public void setItemOnMap(RatedItem itemOnMap)
+{
+
+@Override
+public void onCreate()
+{
+super.onCreate()
+}
+
+@Override
+public void onTerminate()
+{
+super.onTerminate();
+}
+HTTP//REST
+public String queryRESTurl(String url)
+{
+HttpClient httpclient = new DefaultHttpClient();
+
+HttpGet httpget = new HttpGet(url);
+
+HttpResponse response;
+
+try
+{
+response = httpclient.execute(httpget);
+
+HttpEntity entity = response.getEntity();
+
+if (entity != null)
+{
+InputStream instrem = entity.getContent();
+String result1 =
+convertStreamToString(instream);
+
+instream.close();
+
+return result1;
+}
+
+}
+
+catch (IOException e)
+{
+
+}
+
+return null; 
+
+}
+String//
+ public String convertStreamToStreamToString(InputStream is)
+throws IOException
+ {
+   if(is !=null)
+   {
+    StringBuilder sb = new StringBuilder();
+    String line;
+
+    try
+    {
+      BufferedReader reader = new BufferedReader(newwhile ((line = reader.readdLine()) != null)
+      {
+        sb.append(line).append("\n");
+      }
+    }
+
+    finally
+    {
+      is.close();
+    }
+    return sb.toString();
+   }
+
+   else
+   {
+     return "";
+   }
+}
+/*
+JSON JSON Key/value..()
+JSON
+ */
+ public JSONObject[] retrieveJSONs(String urlString)
+ {
+  String result = queryRESTurl(urlString);
+  JSONObject[] jarr = null;
+
+  if (result !=null)
+  {
+  try
+  {
+   result = result.substring(1, result.length()-
+1);
+   int counter = 0;
+   boolean firstSeen = false;
+   boolean secondSeen = false;
+for JSON 
+   for (int i = 0; i< result.lenght(); i++)
+   {
+ if (result.charAt(i) == '{' && firstSeen ==
+{
+firstSeen = true;
+counter++;
+}
+
+else if (result.char.At(i) == '{' && firstSeen
+true)                             ==
+ {
+ secondSeen = true;
+ }
+
+if (result.charAt(i) == '}' && secondSeen
+true)
+ {
+ secondSeen = false;
+ }
+
+else if(result.charAt(i) == '}' &&
+false)                          secondSeen ==
+ {
+ firstSeen = false;
+}
+
+    }
+    jarr = new JSONObject [counter];
+
+    int ind1 = 0;
+    inte  ind2 = 0;
+
