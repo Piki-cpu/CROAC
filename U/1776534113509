@@ -361,12 +361,14 @@ public class RestDroidApplication extends Application
 {
 
 // Qaym API Key
-private String key = "xxxxxxxxxxxxxxxxxxxx";
-private int[] countryAndCityIds;
-private JSONObject[] ratedRestaurants;
-private ArrayList<RatedItem>globalAdapterData;
-private RatedItem itemOnMap;
-private String getBranchesDetailsText()
+ private String key = "xxxxxxxxxxxxxxxxxxxx";
+ private int[] countryAndCityIds;
+ private JSONObject[] ratedRestaurants;
+ private ArrayList<RatedItem>globalAdapterData;
+ private RatedItem itemOnMap;
+ private String getBranchesDetailsText()
+
+public String getBranchesDetails()
 {
 return branchesDetailsText;
 }
@@ -378,9 +380,13 @@ this.branchesDetailsText= branchesDetailsText;
 
 public RatedItem getItemOnMap()
 {
+return itemOnMap;
+}
 
 public void setItemOnMap(RatedItem itemOnMap)
 {
+this.itemOnMap = itemOnMap
+}
 
 @Override
 public void onCreate()
@@ -394,8 +400,8 @@ public void onTerminate()
 super.onTerminate();
 }
 HTTP//REST
-public String queryRESTurl(String url)
-{
+  public String queryRESTurl(String url)
+  {
 HttpClient httpclient = new DefaultHttpClient();
 
 HttpGet httpget = new HttpGet(url);
@@ -432,17 +438,17 @@ return null;
 String//
  public String convertStreamToStreamToString(InputStream is)
 throws IOException
- {
-   if(is !=null)
-   {
-    StringBuilder sb = new StringBuilder();
-    String line;
-
-    try
+  {
+    if(is !=null)
     {
-      BufferedReader reader = new BufferedReader(newwhile ((line = reader.readdLine()) != null)
+      StringBuilder sb = new StringBuilder();
+      String line;
+
+      try
       {
-        sb.append(line).append("\n");
+        BufferedReader reader = new BufferedReader(newwhile ((line = reader.readdLine()) != null)
+      {
+         sb.append(line).append("\n");
       }
     }
 
@@ -457,35 +463,35 @@ throws IOException
    {
      return "";
    }
-}
-/*
+ }
+ /*
 JSON JSON Key/value..()
 JSON
  */
  public JSONObject[] retrieveJSONs(String urlString)
  {
-  String result = queryRESTurl(urlString);
-  JSONObject[] jarr = null;
+   String result = queryRESTurl(urlString);
+   JSONObject[] jarr = null;
 
-  if (result !=null)
-  {
-  try
-  {
-   result = result.substring(1, result.length()-
-1);
-   int counter = 0;
-   boolean firstSeen = false;
-   boolean secondSeen = false;
-for JSON 
-   for (int i = 0; i< result.lenght(); i++)
+   if (result !=null)
    {
+   try
+   {
+    result = result.substring(1, result.length()-
+1);
+    int counter = 0;
+    boolean firstSeen = false;
+    boolean secondSeen = false;
+for // JSON
+      for (int i = 0; i< result.lenght(); i++)
+      {
  if (result.charAt(i) == '{' && firstSeen ==
-{
-firstSeen = true;
-counter++;
-}
+ {
+ firstSeen = true;
+ counter++;
+ }
 
-else if (result.char.At(i) == '{' && firstSeen
+ else if (result.char.At(i) == '{' && firstSeen
 true)                             ==
  {
  secondSeen = true;
@@ -497,7 +503,7 @@ true)
  secondSeen = false;
  }
 
-else if(result.charAt(i) == '}' &&
+ else if(result.charAt(i) == '}' &&
 false)                          secondSeen ==
  {
  firstSeen = false;
@@ -507,5 +513,134 @@ false)                          secondSeen ==
     jarr = new JSONObject [counter];
 
     int ind1 = 0;
-    inte  ind2 = 0;
+    int  ind2 = 0;
+
+    boolean firstSeenS = false;
+    boolean secondSeenS = false;
+
+JSON //
+    for(int i = 0;i< result.lenght();i++)
+    {
+firstSeenS = false;
+     secondSeenS = false;
+
+ if(result.charAt(i) =='{'&& firstSeenS
+false)                        ==
+ {
+ firstSeens = true;
+ ind1 = i;
+ for (int j = i+1;j<result.lenght();
+j++)
+ {
+  if(result.charAt(j) == '{'&&
+ {
+ secondSeenS = true;
+ }
+  if(result.charAt(j) == '}' &&
+ {
+ secondSeenS = false;
+ }
+
+ else if(result.chatAt(j) == '}'
+                                                   &&
+secondSeenS == false)
+ {
+            String mid =
+         
+       jarr[ind2] = new
+ ind2++;
+ i = j;
+ break;
+ }
+ }
+ }
+      }
+     }
+     catch(JSONException e)
+     {
+
+   }
+     }
+
+     return jarr;
+   }
+//
+public String getUrlStringCommand(String command)
+   {
+String service_url = "http://api.gaym.com/0.1/";
+String url ="";
+     url = service_url + command + "/key=" + key;
+
+     return url;
+   }
+
+public void setCountryAndCityIds(int[]
+countryAndCityIds)
+}
+this.countryAndCityIds = countryAndCityIds;
+}
+
+public int[] getCountryAndCityIds()
+{
+return countryAndCityIds;
+}
+
+publicJSONObject[] getRatedRestaurants()
+{
+return ratedRestaurants;
+}
+
+public void setRatedRestaurants(JSONObject[]
+ratedRestaurants)
+{
+this.ratedRestaurants = ratedRestaurants;
+}
+
+public ArrayList<RatedItem>getGlobalAdapterData()
+{
+return globalAdapterData;
+}
+
+public void
+      setGlobalAdapterData(ArrayList<RatedItem>
+globalAdapter)
+{
+this.globalAdapterData = globalAdapter;
+      }
+
+public RatedItem getGlobalAdapterDataItem(int
+position)
+{
+return globalAdapterData.get(position);
+}
+}
+
+
+
+
+
+intro.java
+
+protect void top50Handler()
+{
+try
+{
+API//
+String attrcommand = "cities/" + "57" + "/items/top";
+//accessApplicationMethods()
+RestDroidApplication.java
+String attributesCommand =
+accessAplicationMethods().retrieveJSONs(attributesCommand);
+//\ReatedItemJSON
+ArrayList<RatedItem> sRest = new
+ArrayList<RatedItem>();
+
+if (topCities !=null)
+{
+for (int ff = 0; ff < topCities.lenght;
+ff++)
+{
+//"item_id" JSON
+int id =
+Integer.parseInt(topCities[ff].getString("item_id"));
 
